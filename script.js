@@ -1,11 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("nav ul li a");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
 
-    links.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
-            const section = document.querySelector(this.getAttribute("href"));
-            section.scrollIntoView({ behavior: "smooth" });
-        });
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
     });
 });
