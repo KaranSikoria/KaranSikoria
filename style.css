@@ -71,13 +71,21 @@ nav {
 }
 
 /* Hero Section */
+/* Hero Section - Reduced Height */
 #home {
     background: url('https://source.unsplash.com/1600x900/?technology,cloud') no-repeat center center/cover;
-    height: 100vh;
+    height: 70vh;  /* Reduced height */
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 60px; /* Ensures space below navbar */
+}
+
+/* About Section - Reduced Margin */
+#about {
+    padding: 30px 20px; /* Less padding */
+    margin-top: -50px;  /* Moves it closer to the hero section */
 }
 
 .intro {
