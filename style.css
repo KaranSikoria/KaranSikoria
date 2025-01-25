@@ -33,11 +33,25 @@ nav {
     z-index: 1000;
 }
 
-.logo {
-    font-size: 1.5em;
+/* Left side LinkedIn Link */
+.nav-left {
+    flex: 1;
+}
+
+.linkedin-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Center Name */
+.nav-center {
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
+/* Mobile Menu Toggle */
 .menu-toggle {
     display: none;
     font-size: 1.8em;
@@ -47,10 +61,21 @@ nav {
     cursor: pointer;
 }
 
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Mobile Navigation */
@@ -76,21 +101,12 @@ nav {
     }
 }
 
-/* Hero Section - Reduced Height */
-#home {
-    background: url('https://source.unsplash.com/1600x900/?technology,cloud') no-repeat center center/cover;
-    height: 70vh;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 60px;
-}
-
-/* About Section - Reduced Margin */
-#about {
-    padding: 30px 20px;
-    margin-top: -50px;
+/* Sections */
+section {
+    padding: 50px 20px;
+    background: white;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 /* Grid Layout for Skills */
